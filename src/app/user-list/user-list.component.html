@@ -1,0 +1,10 @@
+<input type="text" [(ngModel)]="searchUser" placeholder="Search User">
+<p>{{name}}</p>
+
+<ul *ngIf="isVisible">
+    <li *ngFor="let user of filteredUsers">
+        {{user}}
+    </li>
+</ul>
+
+<button (click)="toggle()">Toggle</button>
